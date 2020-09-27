@@ -46,6 +46,15 @@ namespace LineComparision
             Console.WriteLine("Length of first line is " + line1Length);
 
 
+            ////Taking points of line1 and printing length of line 2
+            InputLine(ref line1Point1, ref line1Point2);
+            double line2Length;
+            line2Length = FindLength(line1Point1, line1Point2);
+            Console.WriteLine("Length of first line is " + line2Length);
+
+            //Checking for equality
+            if (line1Length == line2Length)
+                Console.WriteLine("Both lines have equal length");
 
 
 
