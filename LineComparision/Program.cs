@@ -45,6 +45,7 @@ namespace LineComparision
             line1Length = FindLength(line1Point1, line1Point2);
             Console.WriteLine("Length of first line is " + line1Length);
 
+
             ////Taking points of line1 and printing length of line 2
             InputLine(ref line1Point1, ref line1Point2);
             double line2Length;
