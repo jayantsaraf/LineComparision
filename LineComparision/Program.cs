@@ -52,13 +52,14 @@ namespace LineComparision
             line2Length = FindLength(line1Point1, line1Point2);
             Console.WriteLine("Length of first line is " + line2Length);
 
-            //Checking for equality
+
+            //Checking for equality and other comparisions
             if (line1Length == line2Length)
                 Console.WriteLine("Both lines have equal length");
-
-
-
-
+            else if (line1Length > line2Length)
+                Console.WriteLine("First line is longer than the second one");
+            else
+                Console.WriteLine("First line is sorter than the second one");
 
         }
     }
