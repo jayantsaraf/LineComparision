@@ -4,6 +4,20 @@ namespace LineComparision
 {
     class Program
     {
+        public static int CompareTo(double length1, double length2)
+        {
+            double line1Length = length1;
+            double line2Length = length2;
+
+            //Checking for equality and other comparisions
+            if (line1Length == line2Length)
+                Console.WriteLine("Both lines have equal length");
+            else if (line1Length > line2Length)
+                Console.WriteLine("First line is longer than the second one");
+            else
+                Console.WriteLine("First line is sorter than the second one");
+            return 0;
+        }
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Line Comparison Program!");
@@ -45,21 +59,14 @@ namespace LineComparision
             line1Length = FindLength(line1Point1, line1Point2);
             Console.WriteLine("Length of first line is " + line1Length);
 
-
             ////Taking points of line1 and printing length of line 2
             InputLine(ref line1Point1, ref line1Point2);
             double line2Length;
             line2Length = FindLength(line1Point1, line1Point2);
             Console.WriteLine("Length of first line is " + line2Length);
 
+            CompareTo(line1Length, line2Length);
 
-            //Checking for equality and other comparisions
-            if (line1Length == line2Length)
-                Console.WriteLine("Both lines have equal length");
-            else if (line1Length > line2Length)
-                Console.WriteLine("First line is longer than the second one");
-            else
-                Console.WriteLine("First line is sorter than the second one");
 
         }
     }
